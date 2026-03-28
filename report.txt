@@ -1,0 +1,8 @@
+CAN Bus Validation Report
+----------------------------------------
+FAIL | Engine Speed: 7200 RPM
+PASS | Vehicle Speed: 0 km/h
+FAIL | Engine Speed: 7200 RPM
+PASS | Vehicle Speed: 16 km/h
+----------------------------------------
+Total: 4 checked | 2 PASS | 2 FAIL
