@@ -6,7 +6,9 @@ A Python tool that parses .asc log files, decodes CAN signals, and generates aut
 
 **## Project Structure**
 
-**```**
+
+
+**```text**
 
 **automotive-can-parser/**
 
@@ -34,7 +36,11 @@ A Python tool that parses .asc log files, decodes CAN signals, and generates aut
 
 &#x20;       **└── report.html**
 
-```
+**```**
+
+
+
+
 
 **Versions \& Output**
 
