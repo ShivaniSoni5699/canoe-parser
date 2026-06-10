@@ -4,6 +4,50 @@ A Python tool that parses .asc log files, decodes CAN signals, and generates aut
 
 
 
+**Project Structure**
+
+
+
+automotive-can-parser/
+
+│
+
+├── .git/
+
+├── README.md
+
+│
+
+└── src/
+
+&#x20;   ├── CANparser.py
+
+&#x20;   ├── can\_parser\_v2.py
+
+&#x20;   ├── can\_log.asc
+
+&#x20;   │
+
+&#x20;   └── reports/
+
+&#x20;       ├── report.txt
+
+&#x20;       └── report.html
+
+
+
+**Versions \& Output**
+
+
+
+| Version          | Architecture             | Generated Report   |
+
+| -----------------| ------------------------ | -------------------|
+
+| CANparser.py     | Functional approach      | reports/report.txt |
+
+| can\_parser\_v2.py | Object-oriented approach | reports/report.html|
+
 
 
 
@@ -57,6 +101,4 @@ PASS | Vehicle Speed: 16 km/h
 \----------------------------------------
 
 Total: 4 checked | 2 PASS | 2 FAIL
-
-
 
