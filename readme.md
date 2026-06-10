@@ -40,17 +40,10 @@ automotive-can-parser/
 
 
 
-| Version          | Architecture             | Generated Report   |
-
-| -----------------| ------------------------ | -------------------|
-
-| CANparser.py     | Functional approach      | reports/report.txt |
-
-| can\_parser\_v2.py | Object-oriented approach | reports/report.html|
-
-
-
-
+|Version|Architecture|Generated Report|
+|-|-|-|
+|CANparser.py|Functional approach|reports/report.txt|
+|can\_parser\_v2.py|Object-oriented approach|reports/report.html|
 
 
 
