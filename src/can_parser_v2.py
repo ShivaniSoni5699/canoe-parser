@@ -32,4 +32,20 @@ class CANparser:
             return name,value,unit
         return None,None,None
 
+   # show pass fail validation
+    def validate(name,value,unit):
+        limits = {
+        "Engine Speed": 6000,
+        "Vehicle Speed": 200,
+        "Engine Temp": 120
+        }
+        if name in limits:
+         if value > limits[name]:
+            return "FAIL"
+        else:
+            return "PASS"
+        return "UNKNOWN"
+ 
+
+
     

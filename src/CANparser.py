@@ -40,7 +40,7 @@ def validate(name,value,unit):
             return "PASS"
     return "UNKNOWN"
 
-def generate_report(results):
+def generate_report(results):  # print to terminal
     print("-" * 40)
     pass_count = 0
     fail_count = 0
@@ -53,7 +53,7 @@ def generate_report(results):
     print("-" * 40)
     print(f"Total: {pass_count + fail_count} checked | {pass_count} PASS | {fail_count} FAIL")
 
-    with open("report.txt", "w") as f:
+    with open("report.txt", "w") as f:  # write to file
         f.write("CAN Bus Validation Report\n")
         f.write("-" * 40 + "\n")
         for name, value, unit, result in results:
