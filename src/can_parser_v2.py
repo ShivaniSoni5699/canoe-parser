@@ -40,10 +40,11 @@ class CANparser:
         "Engine Temp": 120
         }
         if name in limits:
-            if value > limits[name]:
+            if value > limits[name]: # if temporarily changed - throws assertion error  
              return "FAIL"
             else:
              return "PASS"
+            
         return "UNKNOWN"
 
     def run(self):
@@ -85,5 +86,3 @@ class CANparser:
             f.write("</body></html>")
         print("Report saved: report.html")
 
-parser = CANparser("can_log.asc")
-parser.run()
