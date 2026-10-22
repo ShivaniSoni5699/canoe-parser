@@ -64,7 +64,7 @@ PASS | Vehicle Speed: 16 km/h
 Total: 4 checked | 2 PASS | 2 FAIL
 
 
-## Automated Tests
+**Automated Tests**
 
 Pytest checks vehicle-speed validation below, at and above the 200 km/h limit.
 
