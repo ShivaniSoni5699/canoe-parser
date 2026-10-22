@@ -63,3 +63,18 @@ PASS | Vehicle Speed: 16 km/h
 
 Total: 4 checked | 2 PASS | 2 FAIL
 
+
+## Automated Tests
+
+Pytest checks vehicle-speed validation below, at and above the 200 km/h limit.
+
+Install pytest:
+```bash
+python -m pip install pytest
+```
+
+Run from the project root:
+```bash
+python -m pytest src/test_can_parser.py -v
+```
+
