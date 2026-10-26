@@ -20,6 +20,9 @@ class CANparser:
         return timestamp, msg_id, data_bytes # extracted timestamp, message ID and
 
     def decode_signal(self,msg_id,data_bytes): 
+        if not data_bytes:
+         raise ValueError("No data bytes provided")
+
         byte0 = int(data_bytes[0],16)
         # dictionary for IDs taken from data that mean something 
         signals = {
