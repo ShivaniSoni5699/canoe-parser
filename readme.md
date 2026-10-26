@@ -66,15 +66,26 @@ Total: 4 checked | 2 PASS | 2 FAIL
 
 **Automated Tests**
 
-Pytest checks vehicle-speed validation below, at and above the 200 km/h limit.
+
+Eight pytest tests cover:
+- Vehicle speed below, at and above its limit
+- Unknown signal names
+- Vehicle speed and engine speed decoding
+- Empty data and invalid hexadecimal input
 
 Install pytest:
 ```bash
 python -m pip install pytest
 ```
 
-Run from the project root:
+Run tests from the project folder:
 ```bash
 python -m pytest src/test_can_parser.py -v
 ```
+
+GitHub Actions runs these tests automatically on pushes and pull requests.
+
+To verify the tests could detect a defect, I temporarily changed
+the speed comparison from > to >=. The boundary test failed,
+then passed after restoring the correct condition.
 
